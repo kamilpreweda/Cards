@@ -8,14 +8,14 @@ namespace Cards
 {
     internal class Card
     {
-        public string Value { get; private set; }
-        public string Suit { get; private set; }
+        public Values Value { get; private set; }
+        public Suits Suit { get; private set; }
         public string Name { get { return $"{Value} {Suit}"; } }
 
-        public Card(string value, string suit)
+        public Card(Values value, Suits suit)
         {
-            Value = value;
-            Suit = suit;
+            this.Value = value;
+            this.Suit = suit;
         }
     }
 }

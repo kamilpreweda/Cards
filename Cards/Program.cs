@@ -4,7 +4,14 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            Random random = new Random();
+           
+            Suits suit = (Suits)random.Next(4);
+            Values value = (Values)random.Next(1, 14);
+
+            Console.WriteLine($"Twoja karta to {value} {suit}");
+
+
         }
     }
 }
