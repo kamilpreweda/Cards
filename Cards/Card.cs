@@ -8,8 +8,8 @@ namespace Cards
 {
     internal class Card
     {
-        public string Value { get; set; }
-        public string Suit { get; set; }
+        public string Value { get; private set; }
+        public string Suit { get; private set; }
         public string Name { get { return $"{Value} {Suit}"; } }
 
         public Card(string value, string suit)
